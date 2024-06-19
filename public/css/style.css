@@ -3,6 +3,7 @@ header, .project:not(:last-child) {
 }
 
 .no-button {
+  font-weight: bolder;
   background: none;
   border: none;
   padding: 0;
