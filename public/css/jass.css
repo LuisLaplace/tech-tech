@@ -420,13 +420,13 @@ button {
 }
 
 a {
-  color: #1b89bc;
+  font-size: xx-large;
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
   color: #065b83;
-  text-decoration: underline;
 }
 
 /* HEIGHT / WIDTH UTILS */
@@ -1197,7 +1197,7 @@ form [type='radio'] {
 }
 
 .justify-space-between {
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .justify-space-around {
