@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
 });
 
 // Route to get a single project and its comments, then render the project page
-router.get('/project/:id', async (req, res) => {
+router.get('/projects/:id', async (req, res) => {
   console.log("31 ", req.params.id );
   try {
     const projectData = await Project.findByPk(req.params.id, {

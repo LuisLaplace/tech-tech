@@ -41,7 +41,7 @@ document.getElementById('new-comment-form').addEventListener('submit', async (ev
   const projectId = {{id}};
 
   if (content) {
-    const response = await fetch(`/api/projects/${projectId}/`, {
+    const response = await fetch(`/api/projects/${projectId}/comments`, {
       method: 'POST',
       body: JSON.stringify({ content }),
       headers: { 'Content-Type': 'application/json' },
@@ -57,4 +57,5 @@ document.getElementById('new-comment-form').addEventListener('submit', async (ev
   }
 });
 </script>
+
 

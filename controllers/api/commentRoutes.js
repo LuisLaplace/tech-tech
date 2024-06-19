@@ -3,7 +3,7 @@ const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // Route to create a new comment
-router.post('/project/:projectId', withAuth, async (req, res) => {
+router.post('/projects/:projectId/comments', withAuth, async (req, res) => {
   try {
     const { projectId } = req.params;
     const { content } = req.body;
@@ -28,4 +28,5 @@ router.post('/project/:projectId', withAuth, async (req, res) => {
 });
 
 module.exports = router;
+
 
